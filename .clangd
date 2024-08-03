@@ -1,0 +1,12 @@
+Diagnostics:
+  ClangTidy:
+    FastCheckFilter: Loose
+InlayHints:
+  BlockEnd: Yes
+  Designators: Yes
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
+  TypeNameLimit: 0
+Hover:
+  ShowAKA: Yes
