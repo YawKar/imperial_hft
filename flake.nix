@@ -20,6 +20,7 @@
         devShells.default = mkShell' {
           buildInputs = with pkgs; [
             gnumake
+            cmake
           ];
           shellHook = ''
             export PS1="(imperial_hft)$PS1"
