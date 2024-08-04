@@ -1,0 +1,13 @@
+add_executable(pt_inlining)
+target_sources(pt_inlining
+    PRIVATE
+        bench.cpp
+)
+target_compile_options(pt_inlining
+    PRIVATE
+        -mavx
+)
+target_link_libraries(pt_inlining
+    pthread
+    benchmark
+)

@@ -1,0 +1,13 @@
+add_executable(pt_simd)
+target_sources(pt_simd
+    PRIVATE
+        bench.cpp
+)
+target_compile_options(pt_simd
+    PRIVATE
+        -mavx
+)
+target_link_libraries(pt_simd
+    pthread
+    benchmark
+)

@@ -1,0 +1,5 @@
+add_subdirectory(pairs_trading)
+add_subdirectory(pairs_trading_optimized)
+add_subdirectory(pt_buffer)
+add_subdirectory(pt_inlining)
+add_subdirectory(pt_simd)

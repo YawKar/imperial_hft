@@ -1,0 +1,13 @@
+add_executable(pairs_trading_optimized)
+target_sources(pairs_trading_optimized
+    PRIVATE
+        bench.cpp
+)
+target_compile_options(pairs_trading_optimized
+    PRIVATE
+        -mavx
+)
+target_link_libraries(pairs_trading_optimized
+    pthread
+    benchmark
+)

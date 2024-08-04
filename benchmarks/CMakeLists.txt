@@ -1,1 +1,2 @@
 add_subdirectory(design_patterns)
+add_subdirectory(statarb)
