@@ -1,0 +1,23 @@
+name: "Build benchmarks"
+on:
+  pull_request:
+    branches: main
+  push:
+    branches: main
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+    - uses: cachix/install-nix-action@v27
+      with:
+        nix_path: nixpkgs=channel:nixos-unstable
+    - run: nix develop -c cmake . -B build/
+    - run: nix develop -c cmake . -B build/
+    - working-directory: ./build
+      # google benchmark library should be built first
+      run: nix develop -c make benchmark
+    - working-directory: ./build
+      run: nix develop -c make benchmarks

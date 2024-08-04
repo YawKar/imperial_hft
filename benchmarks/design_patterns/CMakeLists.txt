@@ -11,3 +11,20 @@ add_subdirectory(short_circuit)
 add_subdirectory(signed_and_unsigned)
 add_subdirectory(simd)
 add_subdirectory(slowpath_remove)
+
+add_custom_target(benchmarks_design_patterns)
+add_dependencies(benchmarks_design_patterns
+    branch_reduction
+    cache_warming
+    compile_time_dispatch
+    constexpr
+    inlining
+    lock_free
+    loop_unrolling
+    mixing_data_types
+    prefetching
+    short_circuit
+    signed_and_unsigned
+    simd
+    slowpath_remove
+)
