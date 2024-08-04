@@ -1,0 +1,9 @@
+add_executable(inlining)
+target_sources(inlining
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(inlining
+    pthread
+    benchmark
+)

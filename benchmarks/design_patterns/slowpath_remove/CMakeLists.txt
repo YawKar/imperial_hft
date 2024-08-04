@@ -1,0 +1,9 @@
+add_executable(slowpath_remove)
+target_sources(slowpath_remove
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(slowpath_remove
+    pthread
+    benchmark
+)

@@ -1,0 +1,9 @@
+add_executable(lock_free)
+target_sources(lock_free
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(lock_free
+    pthread
+    benchmark
+)

@@ -1,0 +1,9 @@
+add_executable(compile_time_dispatch)
+target_sources(compile_time_dispatch
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(compile_time_dispatch
+    pthread
+    benchmark
+)

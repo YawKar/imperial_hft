@@ -1,0 +1,9 @@
+add_executable(signed_and_unsigned)
+target_sources(signed_and_unsigned
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(signed_and_unsigned
+    pthread
+    benchmark
+)

@@ -1,0 +1,9 @@
+add_executable(mixing_data_types)
+target_sources(mixing_data_types
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(mixing_data_types
+    pthread
+    benchmark
+)

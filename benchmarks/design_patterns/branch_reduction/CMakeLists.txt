@@ -1,0 +1,9 @@
+add_executable(branch_reduction)
+target_sources(branch_reduction
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(branch_reduction
+    pthread
+    benchmark
+)

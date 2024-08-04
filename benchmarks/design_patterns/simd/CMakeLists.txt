@@ -1,0 +1,9 @@
+add_executable(simd)
+target_sources(simd
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(simd
+    pthread
+    benchmark
+)

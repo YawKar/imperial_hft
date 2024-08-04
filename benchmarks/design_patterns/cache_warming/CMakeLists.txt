@@ -1,0 +1,9 @@
+add_executable(cache_warming)
+target_sources(cache_warming
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(cache_warming
+    pthread
+    benchmark
+)

@@ -1,0 +1,9 @@
+add_executable(constexpr)
+target_sources(constexpr
+    PRIVATE
+        bench.cpp
+)
+target_link_libraries(constexpr
+    pthread
+    benchmark
+)
