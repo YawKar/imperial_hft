@@ -1,6 +1,7 @@
 # Low-Latency Programming Repository for High-Frequency Trading (HFT)
 
 ## Table of Contents
+0. [YawKar's addition](#yawkars-addition)
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Installation](#installation)
@@ -8,6 +9,14 @@
 5. [Usage](#usage)
 6. [Benchmarking](#benchmarking)
 7. [Acknowledgments](#acknowledgments)
+
+## Yawkar's addition
+
+1. Added nix flakes with reproducible build environment
+2. Deleted `\*.o`, `.idea`, `~.lock\*`, executables, submodules without refs
+3. Set up CMake build for `design_patterns` and `statarb` (unfortunately, `disruptor` lacks some implementation details)
+4. Set up working submodules in single `external/` dir
+5. Added simple CI to build things using the magnificent `nix`
 
 ## Introduction
 
